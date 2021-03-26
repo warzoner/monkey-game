@@ -1,0 +1,309 @@
+	
+
+
+{
+    "mis_billingDetailReport_report"": {
+        "cluster": "kxhims",
+        "ui": true,
+        "api": true,
+        "display_name": "MIS Billing Detail Report Report",
+        "account_aware": true,
+        "facility_aware": true,
+        "capability": [
+            {
+                "action": "modify",
+                "label": "Update",
+                "key": "id"
+            },
+            {
+                "action": "delete",
+                "label": "Delete",
+                "key": "id"
+            }
+        ],
+        "blocks": {
+            "billing_detail_report_list": {
+                "title": "",
+                "order": 1
+            }
+        },
+        "fields": {
+            "id": {
+                "type": "String",
+                "description": "unique Id"
+            },
+			"bill_date": {
+                "search": true,
+                "type": "Long",
+                "length": 40,
+                "block": "billing_detail_report_list",
+                "list": {
+                    "heading": "Bill Date",
+                    "sortable": true,
+                    "order": 5
+					}
+                },
+				"bill_no": {
+                "search": true,
+                "type": "String",
+                "length": 40,
+                "block": "billing_detail_report_list",
+                "list": {
+                    "heading": "Bill No",
+                    "sortable": true,
+                    "order": 5
+					}
+                },
+			"admissionid": {
+                "search": true,
+                "type": "String",
+                "length": 40,
+                "block": "billing_detail_report_list",
+                "list": {
+                    "heading": "Admission Id",
+                    "sortable": true,
+                    "order": 5
+					}
+                },
+            "uhId": {
+                "type": "String",
+                "length": 40,
+                "block": "billing_detail_report_list",
+                "list": {
+                    "heading": "UHID",
+                    "sortable": true,
+                    "order": 1
+                }
+            },
+            "Patient Name": {
+                "type": "String",
+                "block": "billing_detail_report_list",
+                "list": {
+                    "heading": "Patient Name",
+                    "sortable": true,
+                    "order": 2
+                }
+            },
+            "age": {
+                "type": "String",
+                "length": 40,
+                "block": "billing_detail_report_list",
+                "description": "cancelled|admitted|dischargeInitiated",
+                "list": {
+                    "heading": "Age",
+                    "sortable": true,
+                    "order": 3
+                }
+            },
+
+            "gender": {
+                "search": true,
+                "type": "String",
+                "length": 40,
+                "block": "billing_detail_report_list",
+                "list": {
+                    "heading": "Gender",
+                    "sortable": true,
+                    "order": 4
+                }
+            },
+            "patient_type": {
+                "search": true,
+                "type": "String",
+                "length": 40,
+                "block": "billing_detail_report_list",
+                "list": {
+                    "heading": "Patient Type",
+                    "sortable": true,
+                    "order": 5
+					}
+                },
+				 "payer_type": {
+                "search": true,
+                "type": "String",
+                "length": 40,
+                "block": "billing_detail_report_list",
+                "list": {
+                    "heading": "Payer Type",
+                    "sortable": true,
+                    "order": 5
+					}
+                },
+				 "payer_name": {
+                "search": true,
+                "type": "String",
+                "length": 40,
+                "block": "billing_detail_report_list",
+                "list": {
+                    "heading": "Payer Name",
+                    "sortable": true,
+                    "order": 5
+					}
+                },
+				
+				 "service_type": {
+                "search": true,
+                "type": "String",
+                "length": 40,
+                "block": "billing_detail_report_list",
+                "list": {
+                    "heading": "Service Type",
+                    "sortable": true,
+                    "order": 5
+					}
+                },
+				"service_name": {
+                "search": true,
+                "type": "String",
+                "length": 40,
+                "block": "billing_detail_report_list",
+                "list": {
+                    "heading": "Service Item Name",
+                    "sortable": true,
+                    "order": 5
+					}
+                },
+				"service_discount_amount": {
+                "search": true,
+                "type": "String",
+                "length": 40,
+                "block": "billing_detail_report_list",
+                "list": {
+                    "heading": "Service Discount Amount",
+                    "sortable": true,
+                    "order": 5
+					}
+                },
+				
+				"total_amount": {
+                "search": true,
+                "type": "String",
+                "length": 40,
+                "block": "billing_detail_report_list",
+                "list": {
+                    "heading": "total amount",
+                    "sortable": true,
+                    "order": 5
+					}
+                },
+				"net_amount": {
+                "search": true,
+                "type": "String",
+                "length": 40,
+                "block": "billing_detail_report_list",
+                "list": {
+                    "heading": "Net Amount",
+                    "sortable": true,
+                    "order": 5
+					}
+                },
+				
+				"due_amount": {
+                "search": true,
+                "type": "String",
+                "length": 40,
+                "block": "billing_detail_report_list",
+                "list": {
+                    "heading": "Due Amount",
+                    "sortable": true,
+                    "order": 5
+					}
+                },
+				
+				"discount": {
+                "search": true,
+                "type": "String",
+                "length": 40,
+                "block": "billing_detail_report_list",
+                "list": {
+                    "heading": "Discount Amount",
+                    "sortable": true,
+                    "order": 5
+					}
+                },
+				"refund": {
+                "search": true,
+                "type": "String",
+                "length": 40,
+                "block": "billing_detail_report_list",
+                "list": {
+                    "heading": "Refund Amount",
+                    "sortable": true,
+                    "order": 5
+					}
+                },
+				
+				"ordering_doctor": {
+                "search": true,
+                "type": "String",
+                "length": 40,
+                "block": "billing_detail_report_list",
+                "list": {
+                    "heading": "Ordering Doctor",
+                    "sortable": true,
+                    "order": 5
+					}
+                },			
+				
+				"billing_remark": {
+                "search": true,
+                "type": "String",
+                "length": 40,
+                "block": "billing_detail_report_list",
+                "list": {
+                    "heading": "Billing Remark",
+                    "sortable": true,
+                    "order": 5
+					}
+                },
+				"admitting_doctor": {
+                "search": true,
+                "type": "String",
+                "length": 40,
+                "block": "billing_detail_report_list",
+                "list": {
+                    "heading": "Admitting  Doctor",
+                    "sortable": true,
+                    "order": 5
+					}
+                },
+				
+				"doa": {
+                "search": true,
+                "type": "String",
+                "length": 40,
+                "block": "billing_detail_report_list",
+                "list": {
+                    "heading": "Date of Admission",
+                    "sortable": true,
+                    "order": 5
+					}
+                },
+				"dod": {
+                "search": true,
+                "type": "String",
+                "length": 40,
+                "block": "billing_detail_report_list",
+                "list": {
+                    "heading": "Date of Discharge",
+                    "sortable": true,
+                    "order": 5
+					}
+                },
+				
+				"discharge_type": {
+                "search": true,
+                "type": "String",
+                "length": 40,
+                "block": "billing_detail_report_list",
+                "list": {
+                    "heading": "Discharge Type",
+                    "sortable": true,
+                    "order": 5
+					}
+                },
+        }
+    }			
+
+}
+
